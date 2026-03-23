@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hero Section | GreatFrontEnd Projects</title>
+    <title>Pricing Section Tiers | GreatFrontEnd Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,10 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
@@ -23,11 +18,24 @@
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+  <body class="bg-gradient-to-br from-[#F9FAFB] to-[#D2D6DB] flex flex-col p-4 h-screen">
+    <main class="flex flex-col min-h-full bg-white rounded shadow-sm px-3 py-12 gap-20">
+      <div class="space-y-12">
+        <div id="" class="space-y-10">
+          <div class="space-y-5 flex flex-col items-center">
+            <div class="space-y-3">
+              <h4 class="text-center">Pricing Tiers</h4>
+              <h1 class="text-center">Fit for all your needs</h1>
+            </div>
+            <p class="text-center">
+              Pick the plan that suits you today and step up your demands grow - our flexible options have your journey mapped out.
+            </p>
+          </div>
+          <div id="toggle-container"></div>
+        </div>
+        <div id="tiers-container"></div>
+      </div>
+    </main>
 
     <!-- Attribute this challenge to yourself! -->
     <div class="credits">
@@ -38,7 +46,7 @@
         >GreatFrontEnd Projects</a
       >. Built by
       <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
+        >Fiona D'Mello</a
       >.
     </div>
     <script src="js/index.js"></script>
