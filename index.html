@@ -24,14 +24,17 @@
         <div id="" class="space-y-10">
           <div class="space-y-5 flex flex-col items-center">
             <div class="space-y-3">
-              <h4 class="text-center">Pricing Tiers</h4>
-              <h1 class="text-center">Fit for all your needs</h1>
+              <h4 class="text-center text-base leading-6 font-semibold text-indigo-700">Pricing Tiers</h4>
+              <h1 class="text-center text-3xl leading-7.5 font-semibold">Fit for all your needs</h1>
             </div>
-            <p class="text-center">
+            <p class="text-center text-lg leading-4.5 font-normal text-neutral-600">
               Pick the plan that suits you today and step up your demands grow - our flexible options have your journey mapped out.
             </p>
           </div>
-          <div id="toggle-container"></div>
+          <div id="toggle-container" class="flex gap-4 rounded">
+            <button id="monthly-button" class="flex-1 text-base leading-6 text-neutral-600">Monthly</button>
+            <button id="annual-button" class="flex-1 gap-1.5 px-4 py-2.5 border-0.5 border-neutral-200 rounded shadow">Annually</button>
+          </div>
         </div>
         <div id="tiers-container"></div>
       </div>
