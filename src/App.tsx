@@ -1,5 +1,6 @@
 import Introduction from "@features/Introduction";
-import Toggle from "@features/Toggle"
+import Toggle from "@features/Toggle";
+import Tiers from "@features/Tiers";
 
 function App() {
   return (
@@ -10,17 +11,7 @@ function App() {
             <Introduction />
             <Toggle />
           </div>
-          <div id="tiers-container" className="flex flex-col gap-y-8 justify-center items-center">
-            <div className="p-4 space-y-8 rounded-lg border border-neutral-200 shadow-sm">
-              <div className="space-y-2">
-                <h2>Basic Plan</h2>
-                <p>Access to a curated selection of abstract images</p>
-              </div>
-              <div></div>
-              <ul></ul>
-              <button></button>
-            </div>
-          </div>
+          <Tiers />
         </div>
       </main>
   
