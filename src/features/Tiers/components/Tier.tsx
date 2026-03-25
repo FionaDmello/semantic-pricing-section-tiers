@@ -1,11 +1,13 @@
 import Button from "@features/base/components/Button";
 import type { Tier as TierType } from "../types";
+
 interface TierProps {
   tier: TierType
 }
 
 const Tier = ({ tier }: TierProps) => {
-  const {title, description, price, billed, sellingPoints, mostPopular} = tier
+  const { title, description, price, billed, sellingPoints, mostPopular } = tier
+  
   return (
   <>
     
@@ -44,7 +46,8 @@ const Tier = ({ tier }: TierProps) => {
             className={`${mostPopular ?
               "bg-indigo-700 text-white hover:bg-indigo-800 focus:outline-4 focus:outline-indigo-200 disabled:bg-neutral-100 disabled:text-neutral-400"
               :
-              "border-neutral-200 hover:bg-neutral-50 focus:outline-4 focus:outline-indigo-200 shadow disabled:bg-neutral-100 disabled:text-neutral-400"} flex-1 rounded px-5 py-3 gap-1.5 border-0.5`
+              "border-neutral-200 hover:bg-neutral-50 focus:outline-4 focus:outline-indigo-200 shadow disabled:bg-neutral-100 disabled:text-neutral-400"} 
+              flex-1 rounded px-5 py-3 gap-1.5 border-0.5`
             }
             text="Buy now" />
       </div>
