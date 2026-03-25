@@ -4,4 +4,5 @@ export interface Tier {
   price: string,
   billed: string,
   sellingPoints: string[],
+  mostPopular?: boolean
 }

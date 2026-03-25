@@ -23,6 +23,7 @@ export const TIER_DATA = {
         "Priority email support",
         "Advanced analytics",
       ],
+      mostPopular: true
     },
     {
       title: "Premium Plan",
@@ -63,6 +64,7 @@ export const TIER_DATA = {
         "Priority email support",
         "Advanced analytics",
       ],
+      mostPopular: true
     },
     {
       title: "Premium Plan",
