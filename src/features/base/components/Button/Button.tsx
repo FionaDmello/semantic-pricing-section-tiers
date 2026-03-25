@@ -1,6 +1,6 @@
 
 interface ButtonProps {
-  type: "monthly" | "annual" | "general-focused" | "general-unfocused",
+  type?: "monthly" | "annual",
   className: string,
   text: string
 }

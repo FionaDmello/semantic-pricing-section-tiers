@@ -17,7 +17,7 @@ export const TIER_DATA = {
       price: "$15.99",
       billed: "Billed annually ($192)",
       sellingPoints: [
-        "Expanded library with more diverse abstrac images",
+        "Expanded library with more diverse abstract images",
         "High-resolution images available",
         "Suitable for commercial use",
         "Priority email support",

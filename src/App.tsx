@@ -4,8 +4,8 @@ import Tiers from "@features/Tiers";
 
 function App() {
   return (
-    <div className="bg-linear-to-br from-[#F9FAFB] to-[#D2D6DB] flex flex-col p-4 h-screen">
-      <main className="flex flex-col min-h-full bg-white rounded shadow-sm px-3 py-12 gap-20">
+    <div className="bg-linear-to-br from-[#F9FAFB] to-[#D2D6DB] flex flex-col p-4 min-h-screen">
+      <main className="flex flex-col flex-1 bg-white rounded shadow-sm px-3 py-12 gap-20">
         <div className="space-y-12">
           <div id="" className="space-y-10">
             <Introduction />
