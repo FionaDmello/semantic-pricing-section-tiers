@@ -11,7 +11,7 @@ const Tier = ({ tier }: TierProps) => {
   return (
   <>
     
-    <div className={`${mostPopular ? "border-indigo-600 shadow-2xl": "p-4  border-neutral-200 shadow-sm"} space-y-8 rounded-lg border`}>
+    <div className={`${mostPopular ? "border-indigo-600 shadow-2xl": "p-4 md:p-8 border-neutral-200 shadow-sm"} space-y-8 rounded-lg border`}>
       {
         mostPopular !== undefined && mostPopular === true ?
           <div className="flex py-4 px-2 justify-center bg-indigo-50 text-xl leading-5 font-bold text-indigo-700">
@@ -20,15 +20,15 @@ const Tier = ({ tier }: TierProps) => {
           :
           null
       }
-      <div className={`space-y-2 ${mostPopular ? "px-4": ""}`}>
+      <div className={`space-y-2 ${mostPopular ? "px-4 md:px-8": ""}`}>
         <h2 className="text-2xl font-semibold leading-6">{title}</h2>
         <p className="text-base leading-4 font-normal text-neutral-600">{description}</p>
       </div>
-      <div className={`space-y-2 ${mostPopular ? "px-4": ""}`}>
-        <div className="inline-block text-5xl leading-12 font-semibold">{price}<span className="text-base leading-4 font-normal">/month</span></div>
+      <div className={`space-y-2 ${mostPopular ? "px-4 md:px-8": ""}`}>
+        <div className={`inline-block text-5xl leading-12 font-semibold ${mostPopular ? "text-indigo-700" : "text-black"}`}>{price}<span className="text-base leading-4 font-normal">/month</span></div>
         <div className="text-base leading-4 text-neutral-600">{billed}</div>
       </div>
-        <ul className={`space-y-5 ${mostPopular ? "px-4": ""}`}>
+        <ul className={`space-y-5 ${mostPopular ? "px-4 md:px-8": ""}`}>
         {
           sellingPoints.map((point, idx) => (
             <li key={idx} className="flex gap-x-3 text-neutral-600 items-center">
@@ -41,7 +41,7 @@ const Tier = ({ tier }: TierProps) => {
           ))
         }
       </ul>
-        <div className={`flex ${mostPopular ? "px-4 pb-4": ""}`}>
+        <div className={`flex ${mostPopular ? "px-4 pb-4 md:px-8 md:pb-8": ""}`}>
           <Button
             className={`${mostPopular ?
               "bg-indigo-700 text-white hover:bg-indigo-800 focus:outline-4 focus:outline-indigo-200 disabled:bg-neutral-100 disabled:text-neutral-400"
