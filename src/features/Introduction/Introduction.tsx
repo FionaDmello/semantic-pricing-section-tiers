@@ -1,6 +1,6 @@
 const Introduction = () => {
   return (
-    <div className="space-y-5 md:px-8">
+    <div className="space-y-5 md:px-8 xl:px-40">
       <div className="space-y-3 md:px-10">
         <h4 className="text-center text-base leading-6 md:leading-4 font-semibold text-indigo-700">
           Pricing Tiers

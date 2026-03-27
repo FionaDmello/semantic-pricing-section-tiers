@@ -11,7 +11,7 @@ const Tiers = ({ billingFrequency = "annual" }: TiersProps) => {
   return (
     <div
       id="tiers-container"
-      className="flex flex-col gap-y-8"
+      className="flex flex-col gap-y-8 xl:grid xl:grid-cols-12 xl:gap-8"
     >
       {tiers.map((tier: TierType) => (
         <Tier tier={tier} />
