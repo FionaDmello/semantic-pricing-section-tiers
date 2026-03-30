@@ -1,4 +1,3 @@
-import React from "react";
 import Tier from "./Tier";
 import { TIER_DATA } from "../constants.ts";
 import type { Tier as TierType } from "../types.ts";
