@@ -7,13 +7,18 @@ interface ToggleProps {
   setBillingFrequency: Dispatch<SetStateAction<"annual" | "monthly">>;
 }
 
-const Toggle = ({ billingFrequency ,setBillingFrequency }: ToggleProps) => {
+const Toggle = ({ billingFrequency, setBillingFrequency }: ToggleProps) => {
+  
+  const getClasses = (type: "annual" | "monthly") => {
+    return billingFrequency === type ? BUTTON_STATE_OPTIONS.selected : BUTTON_STATE_OPTIONS.unselected
+  }
+  
   return (
     <div id="toggle-container" className="flex gap-4 rounded md:inline-block xl:space-x-8">
-      <Button type="monthly" className={`${billingFrequency === "monthly"? BUTTON_STATE_OPTIONS.selected : BUTTON_STATE_OPTIONS.selected}`} text="Monthly" setBillingFrequency={setBillingFrequency} />
+      <Button type="monthly" className={`${getClasses("monthly")}`} text="Monthly" setBillingFrequency={setBillingFrequency} />
       <Button
         type="annual"
-        className={`${billingFrequency === "annual" ? BUTTON_STATE_OPTIONS.selected : BUTTON_STATE_OPTIONS.selected}`}
+        className={`${getClasses("annual")}`}
         text="Annually"
         setBillingFrequency={setBillingFrequency}
       />

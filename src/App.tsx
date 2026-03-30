@@ -12,7 +12,7 @@ function App() {
         <div className="space-y-12 md:space-y-16 xl:max-w-7xl xl:mx-8">
           <div className="flex flex-col gap-y-10 items-center">
             <Introduction />
-            <Toggle setBillingFrequency={setBillingFrequency} />
+            <Toggle billingFrequency={billingFrequency}  setBillingFrequency={setBillingFrequency} />
           </div>
           <Tiers billingFrequency={billingFrequency} />
         </div>
