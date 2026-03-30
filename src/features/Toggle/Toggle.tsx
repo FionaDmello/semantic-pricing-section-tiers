@@ -14,7 +14,7 @@ const Toggle = ({ billingFrequency, setBillingFrequency }: ToggleProps) => {
   }
   
   return (
-    <div id="toggle-container" className="flex gap-4 rounded md:inline-block xl:space-x-8">
+    <div id="toggle-container" className="flex gap-4 rounded md:inline-block md:gap-8">
       <Button type="monthly" className={`${getClasses("monthly")}`} text="Monthly" setBillingFrequency={setBillingFrequency} />
       <Button
         type="annual"
