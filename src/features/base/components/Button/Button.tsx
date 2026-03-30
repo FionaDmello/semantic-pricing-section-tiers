@@ -4,12 +4,12 @@ interface ButtonProps {
   type?: "monthly" | "annual",
   className: string,
   text: string,
-  setBillingFrequency: Dispatch<SetStateAction<"annual"|"monthly">>
+  setBillingFrequency?: Dispatch<SetStateAction<"annual"|"monthly">>
 }
 
 const Button = ({ type, className, text, setBillingFrequency } : ButtonProps ) => {
   const toggleHandler = () => {
-    if(type) setBillingFrequency(type)
+    if(type && setBillingFrequency) setBillingFrequency(type)
   } 
   
   return (
